@@ -13,16 +13,17 @@ export default function Home() {
         <link rel="icon" href="/qrcode.ico" />
 
       </Head>
-
-      <div className={styles.mainContainer}>
-        <div className={styles.image}>
-          <Image src="/qr-code.png" alt="QR Code" width={300} height={300} />
+      <main>
+        <div className={styles.mainContainer}>
+          <div className={styles.image}>
+            <Image src="/qr-code.png" alt="QR Code" width={300} height={300} />
+          </div>
+          <div className={styles.text}>
+            <h1 className={styles.headline} >Improve your front-end skills by building projects</h1>
+            <p className={styles.description}>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+          </div>
         </div>
-        <div className={styles.text}>
-          <h1 className={styles.headline} >Improve your front-end skills by building projects</h1>
-          <p className={styles.description}>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-        </div>
-      </div>
+      </main>
     </>
   );
 }
